@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer Example</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Footer Example</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
-                <div class="container px-6 py-12 mx-auto">
-                    <div class="grid">
-                        <div class="sm:col-span-2">
-                            <h1 class="max-w-lg" >Subscribe.</h1>
-                            <div class="flex">
-                                <input id="email" type="text">
-                                <button class="w-full px-6 py-2.5 bg-white">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Quick Link</p>
-                            <div class="flex">
-                                <a href="#">Home</a>
-                                <a href="#">Who We Are</a>
-                                <a href="#">Our Philosophy</a>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Technologies</p>
-                            <div class="">
-                                <a href="#">HTML</a>
-                                <a href="#">CSS</a>
-                                <a href="#">JavaScript</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <hr class="my-6 border-[#d86943]">
-                    
-                    <div class="flex">
-                        <a href="#">
-                            <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                        </a>
-                    </div>
-    </footer>
+   <!-- Footer Section -->
+   <footer class="bg-[#659f8f] dark:bg-[#313131]">
+       <div class="container px-6 py-12 mx-auto">
+        <footer class="bg-[#659f8f] dark:bg-[#313131]">
+           <!-- Grid Layout -->
+           <div class="grid grid-cols-1 sm:grid-cols-1 gap-6 sm:gap-y10 lg:grid-cols-4">
+               <!-- Subscribe Section -->
+               <div class="sm:col-span-1 md:col-span-2">
+                   <h1 class="max-w-lg text-black font-bold">Subscribe to our newsletter for updates.</h1><br>
+                   <div class="flex sm:flex-row flex-col">
+                       <!-- Subscribe Input Field -->
+                       <input class="sm:w-full md:w-auto px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-[#313131] dark:text-white dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" placeholder="Email Address" id="email" type="text">
+                       <!-- Subscribe Button -->
+                       <button class="sm:w-full md:w-auto md:mx-2 sm:mx-0 my-5 md:my-0 px-5 py-2 bg-[#800000] text-white rounded-md">
+                        
+                        Subscribe 
 
+                       </button>
+                   </div>
+               </div>
+               <!-- Quick Link Section -->
+               <div>
+                   <p class="text-black"><b>Quick Link</b></p>
+                   <div class="flex flex-col">
+                       <a href="#" class="text-black hover:underline">Home</a>
+                       <a href="#" class="text-black hover:underline">Who We Are</a>
+                       <a href="#" class="text-black hover:underline">Our Philosophy</a>
+                   </div>
+               </div>
+               <!-- Technologies Section -->
+               <div>
+                   <p class="text-black"><b>Technologies</b></p>
+                   <div class="flex flex-col">
+                       <a href="#" class="text-black hover:underline">HTML</a>
+                       <a href="#" class="text-black hover:underline">CSS</a>
+                       <a href="#" class="text-black hover:underline">JavaScript</a>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Divider -->
+           <hr class="my-6 border-[#d86943]">
+
+           <!-- Footer Bottom Section -->
+           <div class="flex md:flex-row sm:flex-col justify-between items-center mr-1">
+               <!-- Logo -->
+               <a class="flex w-full" href="#">
+                   <img class="w-full h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
+               </a>
+               <!-- Social Media Links -->
+               <div class="flex space-x-2">
+                   <a href="#" class="text-black hover:underline">Facebook</a>
+                   <a href="#" class="text-black hover:underline">Twitter</a>
+                   <a href="#" class="text-black hover:underline">Instagram</a>
+               </div>
+           </div>
+       </div>
+   </footer>
 </body>
-</html>
 
+</html>
